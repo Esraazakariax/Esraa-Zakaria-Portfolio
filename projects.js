@@ -90,3 +90,61 @@ document.querySelectorAll('.scrolll').forEach(el => {
 
 
 
+
+
+// Ultra Smooth + No Lag Scroll (for desktops/laptops)
+(function () {
+  let scrollY = window.scrollY;
+  let currentY = window.scrollY;
+  let isTicking = false;
+
+  const easeFactor = 0.07;
+
+  function smoothStep() {
+    const diff = scrollY - currentY;
+    currentY += diff * easeFactor;
+
+    // Clamp to prevent over-scrolling
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    currentY = Math.max(0, Math.min(currentY, maxScroll));
+
+    window.scrollTo(0, currentY);
+
+    if (Math.abs(diff) > 0.5) {
+      requestAnimationFrame(smoothStep);
+    } else {
+      isTicking = false;
+    }
+  }
+
+  function scrollByAmount(amount) {
+    scrollY += amount;
+
+    // Clamp scroll target
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    scrollY = Math.max(0, Math.min(scrollY, maxScroll));
+
+    if (!isTicking) {
+      isTicking = true;
+      requestAnimationFrame(smoothStep);
+    }
+  }
+
+  // Mouse wheel or trackpad
+  window.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    scrollByAmount(e.deltaY);
+  }, { passive: false });
+
+  // Keyboard scrolling
+  window.addEventListener("keydown", (e) => {
+    const amount = 80;
+    if (["ArrowDown", "PageDown"].includes(e.key)) {
+      e.preventDefault();
+      scrollByAmount(amount);
+    } else if (["ArrowUp", "PageUp"].includes(e.key)) {
+      e.preventDefault();
+      scrollByAmount(-amount);
+    }
+  });
+})();
