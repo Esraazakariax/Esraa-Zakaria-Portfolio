@@ -315,7 +315,7 @@ a {
   cursor: none !important;
 }
 
-.custom-cursor {
+ .custom-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -331,6 +331,9 @@ a {
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
+
+
+
 
 
 
