@@ -472,3 +472,24 @@ a {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
+
+
+
+
+
+
+
+
+.viewwebpage{
+    color: #B3B3B3;
+    font-size: 17px;
+    padding: 5px 12px;
+    border-left: #333 solid 2px;
+    border-radius: 100px;
+    transition: ease-in-out 0.5s color;
+}
+
+.viewwebpage:hover{
+  color: #ffffffff;
+}
