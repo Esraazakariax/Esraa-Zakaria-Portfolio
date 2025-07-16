@@ -32,6 +32,14 @@ document.addEventListener('mouseup', () => {
 
 
 
+
+
+
+
+
+
+
+
 let lastScrollY = window.scrollY;
 
 // Restore visible elements from localStorage on page load
@@ -80,6 +88,23 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.scrolll').forEach(el => {
   observer.observe(el);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,3 +173,7 @@ document.querySelectorAll('.scrolll').forEach(el => {
     }
   });
 })();
+
+
+
+

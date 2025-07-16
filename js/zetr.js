@@ -1,49 +1,3 @@
-const cursor = document.getElementById('cursor');
-
-let mouseX = 0, mouseY = 0;
-let currentX = 0, currentY = 0;
-const speed = 0.1; // Adjust for smoothness (lower = smoother but slower)
-
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-
-function animateCursor() {
-  currentX += (mouseX - currentX) * speed;
-  currentY += (mouseY - currentY) * speed;
-  cursor.style.left = `${currentX}px`;
-  cursor.style.top = `${currentY}px`;
-  requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-// Optional: click animation
-document.addEventListener('mousedown', () => {
-  cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
-});
-document.addEventListener('mouseup', () => {
-  cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let lastScrollY = window.scrollY;
 
 // Restore visible elements from localStorage on page load
@@ -102,6 +56,38 @@ document.querySelectorAll('.scrolll').forEach(el => {
 
 
 
+
+
+
+
+const cursor = document.getElementById('cursor');
+
+let mouseX = 0, mouseY = 0;
+let currentX = 0, currentY = 0;
+const speed = 0.1; // Adjust for smoothness (lower = smoother but slower)
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animateCursor() {
+  currentX += (mouseX - currentX) * speed;
+  currentY += (mouseY - currentY) * speed;
+  cursor.style.left = `${currentX}px`;
+  cursor.style.top = `${currentY}px`;
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
+
+// Optional: click animation
+document.addEventListener('mousedown', () => {
+  cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
+});
+document.addEventListener('mouseup', () => {
+  cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+});
 
 
 
@@ -169,3 +155,10 @@ document.querySelectorAll('.scrolll').forEach(el => {
     }
   });
 })();
+
+
+
+
+
+
+

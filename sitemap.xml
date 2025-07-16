@@ -3,35 +3,35 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://your-project.vercel.app/index.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/index.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/about.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/about.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/projects.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/projects.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/contact.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/contact.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/zetr.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/zetr.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/roxie.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/roxie.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/nightcamelz.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/nightcamelz.html</loc>
   </url>
 
   <url>
-    <loc>https://your-project.vercel.app/project4.html</loc>
+    <loc>https://esraa-zakaria.vercel.app/pages/parallava.html</loc>
   </url>
 
 </urlset>
