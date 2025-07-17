@@ -19,18 +19,29 @@
 <body class="bg-[#0d0d0d] font-[urbanist]">
     
     <!--NAVBAR-->
-    <div class="sticky top-0 z-10">
-        <nav class="flex justify-between items-center text-white px-20 py-3">
-            <a href="/"><img class="w-12" src="./images/logo EZ.png" alt="Esraa zakaria logo"></a>
+    <div class="sticky top-0 z-10 navbar-container">
+    <nav class="flex justify-between items-center text-white px-20 py-3 relative">
+      <!-- Logo -->
+      <a href="index.html">
+        <img class="w-12" src="./images/logo EZ.png" alt="Esraa zakaria logo">
+      </a>
 
-            <div class="flex items-center gap-15 links text-xl">
-                <a href="#">Home</a>
-                <a href="./pages/about.html">About</a>
-                <a href="./pages/projects.html">Projects</a>
-                <a href="./pages/contact.html">Contact</a>
-            </div>
-        </nav>
-    </div>
+      <!-- Hamburger / Close icon -->
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="links text-xl" id="navLinks">
+        <a href="#">Home</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/projects.html">Projects</a>
+        <a href="./pages/contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
 
 
     <!--INTRODUCTION-->
