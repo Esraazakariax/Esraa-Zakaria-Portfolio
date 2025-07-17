@@ -615,4 +615,9 @@ a {
   .links.show {
     display: flex;
   }
+
+
+  .custom-cursor{
+    display: none;
+  }
 }
