@@ -605,11 +605,6 @@ footer{
   }
 
   
-
-
-  .introres{
-    padding-top: 30px;
-  }
   
 
 
@@ -829,6 +824,12 @@ footer{
  .reponfooter h1{
   font-size: xx-large;
  }
+
+
+ .introres{
+    padding-top: 10px;
+  }
+
 
 }
 
