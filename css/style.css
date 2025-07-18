@@ -662,6 +662,7 @@ a {
   nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 40px 20px 40px;
   }
 
@@ -685,6 +686,20 @@ a {
   .contactone{
     padding: 20px 0px 100px 0px;
   }
+
+
+
+  .aboutres{
+    max-width: 320px;
+  }
+
+
+
+
+
+
+
+
 
 }
 
