@@ -594,19 +594,18 @@ a {
   }
 
   .links {
-    backdrop-filter: blur(100px); /* The blur itself */
-    -webkit-backdrop-filter: blur(100px);
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    
     display: none;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     position: absolute;
     top: 70px;
-    right: 50px;
+    right: 30px;
     width: fit-content;
     border-radius: 8px;
     z-index: 9999;
+    background-color: #0d0d0d;
   }
 
 
