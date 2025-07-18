@@ -693,12 +693,62 @@ a {
     max-width: 320px;
   }
 
+  .projectres{
+    max-width: 320px;
+  }
+
+  .tracker{
+    max-height: 200px;
+  }
+
+  .tracker img{
+    max-width: 250px;
+    height: 150px;
+  }
 
 
+  .overviewres{
+    max-width: 320px;
+  }
+
+  .overviewres img{
+    max-width: 320px;
+  }
 
 
+  .peopleres{
+    max-width: 320px;
+  }
+
+  .peoplecard{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
 
 
+  .test{
+    max-width: 320px;
+  }
+
+ .test h3{
+  font-size: 15px;
+  padding-left: 0px;
+  padding-right: 0;
+ } 
+
+
+ .peopleeres img{
+  max-width: 50px;
+ }
+
+ .aboutpeople h1,h3{
+  font-size: 14px;
+ }
+
+ .aboutpeople{
+  padding-left: 20px;
+ }
 
 
 }
