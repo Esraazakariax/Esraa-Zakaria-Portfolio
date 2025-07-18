@@ -109,7 +109,6 @@
 }
 
 nav{
-  position: relative;
   width: 100%;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -660,7 +659,13 @@ a {
   }
 
 
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+  }
 
+  
 
 
 
