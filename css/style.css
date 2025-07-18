@@ -693,8 +693,16 @@ a {
     max-width: 320px;
   }
 
+  .aboutes h2{
+    font-size: 20px;
+  }
+
   .projectres{
     max-width: 320px;
+  }
+
+  .projectt h3{
+    font-size: 20px;
   }
 
   .tracker{
