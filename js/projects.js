@@ -157,3 +157,26 @@ document.querySelectorAll('.scrolll').forEach(el => {
 
 
 
+const hamburger = document.getElementById('hamburger');
+const links = document.querySelector('.links');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = links.classList.contains('show');
+
+  if (isOpen) {
+    // Fade out
+    links.classList.remove('show');
+    links.classList.add('fadeout');
+    hamburger.classList.remove('open');
+
+    setTimeout(() => {
+      links.style.display = 'none';
+      links.classList.remove('fadeout');
+    }, 500); // Matches animation duration
+  } else {
+    // Fade in
+    links.style.display = 'flex';
+    links.classList.add('show');
+    hamburger.classList.add('open');
+  }
+});

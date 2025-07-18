@@ -109,6 +109,7 @@
 }
 
 nav{
+  position: relative;
   width: 100%;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -550,11 +551,7 @@ a {
 
 
 
-/* Navigation Links */
-.links {
-  display: flex;
-  gap: 2rem;
-}
+
 
 /* Hamburger */
 .hamburger {
@@ -569,20 +566,20 @@ a {
   width: 25px;
   height: 3px;
   background: white;
-  transition: 0.3s;
+  transition: 0.5s ease;
   border-radius: 2px;
 }
 
 /* Hamburger active (X) state */
-.hamburger.active span:nth-child(1) {
+.hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 6px);
 }
 
-.hamburger.active span:nth-child(2) {
+.hamburger.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active span:nth-child(3) {
+.hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -7px);
 }
 
@@ -594,7 +591,6 @@ a {
   }
 
   .links {
-    
     display: none;
     flex-direction: column;
     gap: 1rem;
@@ -605,13 +601,51 @@ a {
     width: fit-content;
     border-radius: 8px;
     z-index: 9999;
-    background-color: #0d0d0d;
+    background-color:rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+    
+    animation: fadee 0.5s ease forwards;
   }
+
+@keyframes fadee {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.links.fadeout {
+  animation: fadeout 0.5s ease forwards;
+}
+
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 
 
   .links a{
     padding-left: 30px;
     padding-right: 30px;
+    color: #333;
+    transition: ease-in-out 0.3s color;
+  }
+
+  .links a:hover{
+    color: #ffffffff;
   }
 
   .links.show {
@@ -621,6 +655,45 @@ a {
   }
 
 
+  .custom-cursor{
+    display: none;
+  }
+
+
+
+
+
+
+  .contactres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .contactres hr{
+    display: none;
+  }
+
+
+  .contactone{
+    padding: 20px 0px 100px 0px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Styles only for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .custom-cursor{
     display: none;
   }
