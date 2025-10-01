@@ -387,10 +387,6 @@ a {
 
 .backgroundabout{
   background-image: url(../images/about.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 
@@ -789,7 +785,7 @@ footer{
 
  .backgroundabout{
   background-color: #0d0d0d;
-  /*background-image: url(../images/aboutres.png);
+  /*background-image:;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
