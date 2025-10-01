@@ -838,6 +838,11 @@ footer{
   }
 
 
+  hr{
+    display: block;
+  }
+
+
 }
 
 
