@@ -425,7 +425,7 @@ a {
 footer{
   width: 100%;
   color: #B3B3B3;
-  border-radius: 50px;
+  border-radius: 50px 50px 0px 0px;
   border-top: #333 1px solid;
 }
 
@@ -780,6 +780,20 @@ footer{
  .aboutme{
   padding-left: 20px;
   padding-right: 20px;
+ }
+
+
+ .backgroundabout{
+  background-image: url(../images/aboutres.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+
+ .backgroundres{
+  background-color: #0d0d0d;
  }
 
 
