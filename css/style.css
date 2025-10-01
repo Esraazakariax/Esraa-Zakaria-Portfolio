@@ -467,7 +467,6 @@ footer{
 
 
 .projectcard{
-  background-color: #33333333;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
