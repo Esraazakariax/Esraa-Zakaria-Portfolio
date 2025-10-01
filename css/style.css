@@ -701,11 +701,15 @@ footer{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
  }
 
 
 
- 
+ .projectres{
+  padding: 20px 20px 20px 20px;
+ }
 
  .projectres h3{
   font-size: larger;
