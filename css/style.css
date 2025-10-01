@@ -387,6 +387,10 @@ a {
 
 .backgroundabout{
   background-image: url(../images/about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
