@@ -183,16 +183,6 @@ nav{
 
 
 
-.project img{
-  border-left: #6d00b1 solid 4px;
-  border-right: #6d00b1 solid 4px;
-  border-radius: 50px;
-}
-
-
-
-
-
 
 /* <reset-style> ============================ */
 a {
@@ -717,9 +707,7 @@ footer{
 
 
 
- .projectres{
-  padding: 20px 20px 20px 20px;
- }
+ 
 
  .projectres h3{
   font-size: larger;
