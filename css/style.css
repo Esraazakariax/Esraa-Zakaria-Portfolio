@@ -783,13 +783,14 @@ footer{
  }
 
 
- /*.backgroundabout{
-  background-image: url(../images/aboutres.png);
+ .backgroundabout{
+  background-color: #0d0d0d;
+  /*background-image: url(../images/aboutres.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
- }*/
+  background-size: cover;*/
+ }
 
 
  .backgroundres{
